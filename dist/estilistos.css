@@ -35,14 +35,3 @@ body {
     flex: 1;
     padding: 20px;
 }
-
-.text-column {
-    background-color: #f0f0f0;
-}
-
-.image-column img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 100%;
-}

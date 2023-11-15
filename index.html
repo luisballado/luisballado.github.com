@@ -22,13 +22,13 @@
 	  <br>
 	  <div>
 	    <p style="font-size: 0.95em;">Estrategias para la exploración coordinada multi-VANT</p>
-	    <br>
+	    <p style="margin:0;">Maestría en Ciencias en Ingeniería y Tecnologías Computacionales</p>
+	    <p style="margin-top:0;">Ingeniería Computacional</p>
+	    <p style="margin:0;"><img style="margin:0;" src="images/cinves-logo.jpg" width="150" height="150"></p>
 	    <p>Luis Alberto Ballado Aradias</p>
-	    <p style="margin:0;">Maestria en Ciencias en Ingeniería y Tecnologías Computacionales</p>
-	    <p style="margin-top:0;">Ingenieria Computacional</p>
 	    <p style="margin:0;">Asesores:</p>
-	    <p style="margin-top:0;">Dr. José Gabriel Ramírez Torres, Dr. Eduardo Rodriguez Tello</p>
-	    <p><img src="images/cinves-logo.jpg" width="150" height="150"></p>
+	    <p align="left" style="margin-left:30%; margin-top:0;margin-bottom:0;">Dr. José Gabriel Ramírez-Torres</p>
+	    <p align="left" style="margin-left:30%; margin-top:0;">Dr. Eduardo Arturo Rodríguez-Tello</p>
 	  </div>
 	  <div id="current_date" style="font-size: 0.675em;">
 	    <script>
@@ -92,15 +92,27 @@
 	  VEHICULOS AEREOS NO TRIPULADOS (VANTS)
 	  <section>
 	    <img src="images/fixed-wing.gif">
+	    <footer>
+	      <p>VANT ala fija - Vía DELAIR</p>
+	    </footer>
 	  </section>
 	  <section>
 	    <img src="images/single-rotor.gif">
+	    <footer>
+	      <p>VANT rotor único - Vía PRODRONE</p>
+	    </footer>
 	  </section>
 	  <section>
 	    <img src="images/multi-rotor.gif">
+	    <footer>
+	      <p>VANT multi-rotor - Vía DJI</p>
+	    </footer>
 	  </section>
 	  <section>
 	    <img src="images/vtol-drone.gif">
+	    <footer>
+	      <p>VANT Vertical Takeoff and Landing (VTOL) - Vía FeiyuTech</p>
+	    </footer>
 	  </section>
 	</section>
 
@@ -132,16 +144,22 @@
 	  
 	  <section data-background-color="white" data-transition="slide">
 	    <h4>Localización - ¿Dónde estoy?</h4>
-	    <img src="images/sta.png">
+	    <img src="images/slam.gif">
 	  </section>
 
 	  <section data-background-color="white" data-transition="slide">
 	    <h4>Cognición</h4>
 	    <p>¿A dónde voy?</p>
 	    <div class="r-stack">
-	      <img class="fragment" src="images/control.png">
-	      <img class="fragment" src="images/control_drone.png">
-	      <img class="fragment" src="images/arquitectura.png">
+	      <div>
+		<img class="fragment" src="images/control.png">
+	      </div>
+	      <div>
+		<img class="fragment" src="images/control_drone.png">
+	      </div>
+	      <div>
+		<img class="fragment" src="images/arquitectura.png">
+	      </div>
 	    </div>
 	  </section>
 	  <section data-background-color="white" data-transition="slide">
@@ -174,6 +192,24 @@
 	  </section>
 	</section>
 	<section data-background-color="white" data-transition="slide">
+	  <h4>Ciclo Ver-Pensar-Actuar</h4>
+	  <div class="r-stack">
+	    <img class="fragment" src="images/see-think-act-1.png">
+	    <img class="fragment" src="images/see-think-act-2.png">
+	    <img class="fragment" src="images/see-think-act-3.png">
+	    <img class="fragment" src="images/see-think-act-4.png">
+	    <img class="fragment" src="images/see-think-act-5.png">
+	    <img class="fragment" src="images/see-think-act-6.png">
+	    <img class="fragment" src="images/see-think-act-7.png">
+	    <img class="fragment" src="images/see-think-act-8.png">
+	    <img class="fragment" src="images/see-think-act-9.png">
+	    <img class="fragment" src="images/see-think-act-10.png">
+	    <img class="fragment" src="images/see-think-act-11.png">
+	    <img class="fragment" src="images/see-think-act.png">
+	    <img class="fragment" src="images/see-think-act-12.png">
+	  </div>
+	</section>
+	<section data-background-color="white" data-transition="slide">
 	  <h3>Simuladores</h3>
 	  <div class="r-stack">
 	    <ul>
@@ -184,16 +220,30 @@
 	    <img class="fragment" width="80%" src="images/sim.gif">
 	  </div>
 	</section>
+
 	<section>
-	  Que involucra el trabajo
-	  - representacion del mundo
-	  - un algoritmo de planificación de rutas
-	  - reparticion de tareas y coordinación
+	  <h6>Estrategias para la exploración coordinada multi-VANT</h6>
+	  <h5 class="fragment" style="color:red;">Retos</h5>
+	  <div class="r-stack">
+	    <ul>
+	      <li class="fragment">Representación del mundo</li>
+	      <li class="fragment">Trayectorias libres de colisiones</li>
+	      <li class="fragment">Repartición de tareas de exploración</li>
+	      <li class="fragment">Toma de decisiones inteligente</li>
+	    </ul>
+	  </div>
+	  <br>
+	  <h5 style="font-size:60px;color:green;" class="fragment">Con un enfoque basado en Teoría de Juegos</h5>
 	</section>
-	<section>
-	  Uno de los enfoques es en realizar tareas de exploración en interiores y conocer el uso de tecnicas de inteligencia computacional y teoria de juegos pueden ser utiles en diversos campos.
-	</section>
+	
 	<!--
+	    Que involucra el trabajo
+	    - representacion del mundo
+	    - un algoritmo de planificación de rutas
+	    - reparticion de tareas y coordinación
+	    Uno de los enfoques es en realizar tareas de exploración en interiores y conocer el uso de tecnicas de inteligencia computacional y teoria de juegos pueden ser utiles en diversos campos.
+	    
+	    
 	<section>
 	  <p>
 	    This $F = m \cdot a$ was an inline equation.
