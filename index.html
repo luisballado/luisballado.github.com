@@ -1,60 +1,242 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>reveal.js</title>
+    
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/estilistos.css">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section data-background-color="white" data-transition="slide">
+	  <br>
+	  <div>
+	    <p style="font-size: 0.95em;">Estrategias para la exploración cooridinada multi-VANT</p>
+	    <p>Luis Alberto Ballado Aradias</p>
+	    <p style="margin:0;">Maestria en Ciencias en Ingeniería y Tecnologías Computacionales</p>
+	    <p style="margin-top:0;">Ingenieria Computacional</p>
+	    <p style="margin:0;">Asesores:</p>
+	    <p style="margin-top:0;">Dr. José Gabriel Ramírez Torres, Dr. Eduardo Rodriguez Tello</p>
+	    <p>
+	      <img src="images/cinves-logo.jpg" width="150" height="150">
+	    </p>
+	  </div>
+	  <div id="current_date" style="font-size: 0.675em;">
+	    <script>
+              date = new Date();
+              year = date.getFullYear();
+              month = date.getMonth() + 1;
+              day = date.getDate();
+              document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+	    </script>
+	  </div>
+	</section>
+	
+	<section>
+	  <div class="container">
+	    <div class="column">
+	      <h2>Robótica</h2>
+	      <p>Tipos de robots</p>
+	      <ul>
+		<li class="fragment" data-fragment-index="1">Industriales</li>
+		<li class="fragment" data-fragment-index="2">Servicios</li>
+	      </ul> 
+	    </div>
+	    <div class="column image-column">
+	      <div class="r-stack">
+		<img class="fragment" data-fragment-index="1" src="images/industrial.gif">
+		<img class="fragment" data-fragment-index="2" src="images/servicios.gif">
+	      </div>
+	    </div>
+	  </div>
+	</section>
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+	<section>
+	  VEHICULOS TERRESTRES NO TRIPULADOS (VTNT)
+	  <section>
+	    <img src="images/roomba.gif">
+	  </section>
+	  <section>
+	    <img src="images/sacate.gif">
+	  </section>
+	  <section>
+	    <img src="images/amazon.gif">
+	  </section>
+	  <section>
+	    <img src="images/mars.gif">
+	  </section>
+	</section>
+	
+	<section>
+	  VEHICULOS AEREOS NO TRIPULADOS (VANTS)
+	  <section>
+	    <img src="images/fixed-wing.gif">
+	  </section>
+	  <section>
+	    <img src="images/single-rotor.gif">
+	  </section>
+	  <section>
+	    <img src="images/multi-rotor.gif">
+	  </section>
+	  <section>
+	    <img src="images/vtol-drone.gif">
+	  </section>
+	</section>
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
+	<section class="hide-menu-button">
+	  <section data-transition="slide">
+	    <h3>Problemas en robótica</h3>
+	    
+            <p class="fragment" data-fragment-index="1">¿Dónde estoy?</p>
+            <p class="fragment" data-fragment-index="2">¿A dónde voy?</p>
+	    <p class="fragment" data-fragment-index="3">¿Cómo llego ahí?</p>
+	    <p class="fragment" style="font-size:60px;color:red;"> Robot Autónomo</p>
+	  </section>
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+	  <section>
+	    <h4>El robot debe</h4>
+	    <div class="container">
+	      <div class="column image-column">
+		<img src="images/autonomo.gif">
+	      </div>
+	      <div class="column">
+		<ul>
+		  <li class="fragment" data-fragment-index="1">Tener un modelo del ambiente</li>
+		  <li class="fragment" data-fragment-index="2">Localizarse dentro del ambiente</li>
+		  <li class="fragment" data-fragment-index="3">Planear y ejecutar los movimientos</li>
+		</ul> 
+	      </div>
+	    </div>
+	  </section>
+	  
+	  <section data-background-color="white" data-transition="slide">
+	    <h4>Localización - ¿Dónde estoy?</h4>
+	    <img src="images/sta.png">
+	  </section>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="myapp">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>myapp</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '4031634057';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-</head>
-<body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
+	  <section data-background-color="white" data-transition="slide">
+	    <h4>Cognición</h4>
+	    <p>¿A dónde voy?</p>
+	    <div class="r-stack">
+	      <img class="fragment" src="images/control.png">
+	      <img class="fragment" src="images/control_drone.png">
+	      <img class="fragment" src="images/arquitectura.png">
+	    </div>
+	  </section>
+	  <section data-background-color="white" data-transition="slide">
+	    
+	    <h4>Planificación de trayectoria</h4>
+	    <p>¿Cómo llego ahí?</p>
+	    <div class="r-stack">
+	      <div class="container">
+		<div class="column">
+		  <ul>
+		    <li class="fragment" data-fragment-index="1">Global</li>
+		    <ul>
+		      <li class="fragment" data-fragment-index="1">Búsqueda por grafos</li>
+		    </ul> 
+		    <li class="fragment" data-fragment-index="2">Local</li>
+		    <ul>
+		      <li class="fragment" data-fragment-index="2">Campos de potencial artificial</li>
+		      <li class="fragment" data-fragment-index="2">Algoritmos Bug</li>
+		    </ul> 
+		  </ul> 
+		</div>
+		<div class="column image-column">
+		  <img src="images/img5.png">
+		</div>
+	      </div>
+	      <img class="fragment" src="images/rrt_car.gif">
+	      <img class="fragment" src="images/path_uav.gif">
+	      <img class="fragment" src="images/path_rl.gif">
+	    </div>
+	  </section>
+	</section>
+	<section data-background-color="white" data-transition="slide">
+	  <h3>Simuladores</h3>
+	  <div class="r-stack">
+	    <ul>
+	      <li class="fragment">Baratos</li>
+	      <li class="fragment">Rápidos</li>
+	      <li class="fragment">Seguros</li>
+	    </ul>
+	    <img class="fragment" width="80%" src="images/sim.gif">
+	  </div>
+	</section>
+	<section>
+	  Que involucra el trabajo
+	  - representacion del mundo
+	  - un algoritmo de planificación de rutas
+	  - reparticion de tareas y coordinación
+	</section>
+	<section>
+	  Uno de los enfoques es en realizar tareas de exploración en interiores y conocer el uso de tecnicas de inteligencia computacional y teoria de juegos pueden ser utiles en diversos campos.
+	</section>
+	<!--
+	<section>
+	  <p>
+	    This $F = m \cdot a$ was an inline equation.
+	  </p>
+	  <br />
+	  
+	  <p>
+	    Some bigger equation:
+	    \[\begin{aligned}
+	    E &= m \cdot c^2 \\
+	    h \cdot f &= E
+	    \end{aligned}\]
+	  </p>
+	</section>
+	<section>
+	  algo aqui?
+	  <div class="r-stack">
+	    <img class="fragment" src="https://placekitten.com/450/300" width="450" height="300">
+	    <img class="fragment" src="https://placekitten.com/300/450" width="300" height="450">
+	    <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+	  </div>
+	</section>
+	<section>
+	  <h2>Stretch Example</h2>
+	  <img class="r-stretch" src="/images/slides-symbol-512x512.png">
+	  <p>Image byline</p>
+	</section>
+	<section>
+	  <img src="https://placekitten.com/300/450" width="300" height="450">
+	  <img src="https://placekitten.com/300/450" width="300" height="450">
+	  <img src="https://placekitten.com/300/450" width="300" height="450">
+	</section>
+	-->
+	<section><h2>Veamos un demo</h2></section>
+	<section><h2>Conclusiones</h2></section>
+	<section><h2>¿Preguntas?</h2></section>
+      </div>
+    </div>
+    
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+	  hash: true,
+	  autoPlayMedia: true,
+	  slideNumber: true,
+	  // Learn about plugins: https://revealjs.com/plugins/
+	  plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
       });
-    });
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
-</body>
+    </script>
+  </body>
 </html>
