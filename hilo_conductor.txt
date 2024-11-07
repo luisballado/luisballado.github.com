@@ -1,0 +1,28 @@
+¿Qué-Por qué-Para qué?
+Estrategias para la exploración coordinada multi-VANT
+ 1.- Tipos de robots (Robots industrial: confinados en lugares cerrados
+                                        predecibles)
+		      Robots de servicios/colaborativas: Interactuan
+		                         con el mundo que lo rodea)
+ 2.- Problemas en robótica
+     Navegación autónoma puede definirse a grandes rasgos como la
+     capacidad de moverse de forma segura a lo largo de una trayectoria
+     entre un punto de inicio y uno final
+     -- J.J. Leonard etal. "Mobile robot localization by..." 2022
+     - ¿En que año fue el primer carro autonomo completo un recorrido
+     de 20km a una velocidad de 90km/h en una carretera pública?
+     - 1987, Ernest Dickmanns, Bundeswehr Universität München
+     https://www.youtube.com/watch?v=I39sxwYKlEE
+ 3.- Moravec Paradox
+ 4.- Information Path Planning
+ 5.- Exploración
+ 6.- Localización
+ 7.- Representación del medio ambiente
+ 8.- Planificar trayectoria
+ 9.- Arquitectura de tres capas
+10.- ROS (uso de simuladores)
+11.- Video exploración
+12.- Conclusiones
+     - Crear robots no es solo cosa de fierros, se necesitan conocer de
+     algoritmos, poder procesar la información de sensores en tarjetas
+     embebidas en recursos limitados
