@@ -56,6 +56,106 @@
 	    </script>
 	  </div>
 	</section>
+
+	<!-- Comenzare hablando desde una vista en alto nivel 
+	     y posteiormente lo ire centrando al problema de mi 
+	     trabajo de tesis -->
+
+	<!-- Nuestra facinacion por crear robots, maquinan que imitan a la naturaleza no es algo reciente, los robots son mas viejos que las computadoras, que los motores y la energia electrica -->
+	
+	<section>
+	  <section>
+	    <div class="container">
+	      <div class="column">
+		ro-bot /'ro,bät, 'rob€t/
+		<br>
+		<br>
+		Checo 'robota'
+		<ul>
+		  <li>Trabajo forzado</li>
+		</ul>
+		<br>
+		<br>
+		Polaco 'robotnik'
+		<ul>
+		  <li>Trabajador</li>
+		</ul>
+	      </div>
+	      <div class="column image-column">
+		<img width="70%" src="images/Eric_RUR-14.JPG">
+		<p>Karel Čapek en 1920</p>
+	      </div>
+	    </div>
+	  </section>
+	  <section>
+	    <!-- 1773 Jaquet-Droz -->
+	    <img width="50%" src="images/gettyimages-1143018727-copy-1604424418.jpg">
+	    <footer>
+	      <p>~50 DC Herón de Alejandría</p>
+	    </footer>
+	  </section>
+	  <section>
+	    <!-- 1773 Jaquet-Droz -->
+	    <img src="images/automata.gif">
+	    <footer>
+	      <p>1773 Jaquet-Droz</p>
+	    </footer>
+	  </section>
+	  <section>
+	    <!-- 1940 Elektro y sparko -->
+	    <img src="images/elektro.gif">
+	    <footer>
+	      <p>1940 Elektro & Sparko</p>
+	    </footer>
+	  </section>
+	  <section>
+	    <!-- 1949 Grey Walter -->
+	    <img width="70%" src="images/tortoise.gif">
+	    <footer>
+	      <p>1948 Tortoise</p>
+	    </footer>
+	  </section>
+	  <section>
+	    <!-- Shakey was created from 1966-72 Stanford Espacio estructurado 1968 A* -->
+	    <img src="images/shakey.gif">
+	    <footer>
+	      <p>1966-1972 Shakey</p>
+	    </footer>
+	  </section>
+	  <section>
+	    <!-- The Stanford Card 1979 (No estructurado) -->
+	    <img src="images/scar.gif">
+	    <footer>
+	      <p>1973-1979 Stanford Card</p>
+	    </footer>
+	  </section>
+	  <!-- 1987 Carro autonomo -->
+	  <section data-background-color="white" data-transition="slide">
+	    <p>¿En que año un carro autonomo completo un recorrido de 20km?</p>
+	    <div class="r-stack">
+	      <img width="150%" class="fragment" src="images/autonomouscar.gif">
+	    </div>
+	    
+	    <p class="fragment">1987 Ernst Dickmanns - Universität der Bundeswehr München</p>
+	  </section>
+	</section>
+	
+		
+
+	<!-- Motivacion -->
+	<!-- Crear sistemas roboticos, por qué? y Cómo?-->
+	<!-- 
+	     Navegar y atravesar zonas de desastres
+	     Soluciones en logistica y transporte
+	     Colaboracion entre robots o con humanos para escenarios de busqueda y rescate o exploracion cientifica
+	     Robots de asistencia
+	     Entretenimiento
+	     Respuestas en pandemia? <-- entrega de medicamentos de una manera eficiente.. monitoreo
+	     Y es importante tener soluciones para esas contingencias
+	     Robots que puedan funcionar en cualquier lugar, bajo condiciones extremas
+	     ...
+	     Tenemos una oportunidad ilimitada para crear investigacion y compañias en estos temas
+	  -->
 	
 	<!-- Problemas en robotica -->
 	<section>
@@ -64,13 +164,13 @@
 	      <h2>Robótica</h2>
 	      <p>Tipos de robots</p>
 	      <ul>
-		<li class="fragment" data-fragment-index="1">Industriales</li>
-		<li class="fragment" data-fragment-index="2">Servicios</li>
+		<li class="fragment" data-fragment-index="1">Industriales (Fijos)</li>
+		<li class="fragment" data-fragment-index="2">Servicios (Moviles)</li>
 	      </ul> 
 	    </div>
 	    <div class="column image-column">
 	      <div class="r-stack">
-		<img class="fragment" data-fragment-index="1" src="images/industrial.gif">
+		<img class="fragment" data-fragment-index="1" src="images/1366_2000.webp">
 		<img class="fragment" data-fragment-index="2" src="images/servicios.gif">
 	      </div>
 	    </div>
@@ -136,7 +236,8 @@
 	</section>
 
 	<!-- path planning -->
-
+	<!-- What makes robotics research difficult? -->
+	<!-- Why don't we have reliable autonomy yet? -->
 	<section data-background-color="white" data-transition="slide">
 	  <h4>Robótica</h4>
 	  <p>Planificación de trayectorias</p>
@@ -188,6 +289,9 @@
 	  </div>
 	</section>
 	-->
+
+	<!-- Poner aqui Paradoja de Moravec -->
+	
 	<section class="hide-menu-button">
 	  <section data-transition="slide">
 	    <h3>Problemas en robótica</h3>
@@ -213,15 +317,23 @@
 	      </div>
 	    </div>
 	  </section>
-	  
+
+	  <!-- Informative Path Planning (IPP) -->
 	  <section data-background-color="white" data-transition="slide">
-	    <h4>Localización - ¿Dónde estoy?</h4>
-	    <img src="images/slam.gif">
+	    <h4>Informative Path Planning (IPP)</h4>
+	    Encontrar un camino que maximice la ganancia de información respecto a ciertas limitantes
 	  </section>
 
 	  <section data-background-color="white" data-transition="slide">
-	    <h4>Computación</h4>
-	    <p>¿A dónde voy?</p>
+	    <h4>¿Cuáles son las aplicaciones del IPP?</h4>
+	    <p>Inspecciones de estructuras</p>
+	    <p>Reconocimiento de zonas</p>
+	    <p>Monitoreo de incendios</p>
+	    <p>Busqueda y rescate</p>
+	    <p>Reconstrucción 3D</p>
+	    <p>Monitoreo ambiental</p>
+	    <p>Agricultura de presición</p>
+	    <p>... etc</p>
 	    <div class="r-stack"> 
 	      <img class="fragment current-visible" width="50%" src="images/control.png">
 	      <img class="fragment current-visible" src="images/arquitectura_robots.png">
@@ -229,6 +341,21 @@
 	    </div>
 	  </section>
 
+	  <!-- Exploración -->
+	  <!-- 
+	       Classic robot exploration usually:
+	       - Does not have prior knowledge on environments
+	       - Does not consider long-term benefit of exploration
+	       
+	       Lo que queremos lograr:
+	       - Efectuar la exploración de manera descentralizada
+	       - Minimizar la duplicacion de esfuerzos de exploracion
+	    -->
+	  
+	  <!-- Trabajos relacionados -->
+	  <!-- Ventajas - Limitantes -->
+
+	  
 	  <section data-background-color="white" data-transition="slide">
 	    
 	    <h4>Planificación de trayectoria</h4>
@@ -261,25 +388,7 @@
 	    </div>
 	  </section>
 	</section>
-	<section data-background-color="white" data-transition="slide">
-	  <h4>Ciclo Sentir-Pensar-Actuar</h4>
-	  <div class="r-stack">
-	    <img class="fragment" src="images/see-think-act-1.png">
-	    <img class="fragment" src="images/see-think-act-2.png">
-	    <img class="fragment" src="images/see-think-act-3.png">
-	    <img class="fragment" src="images/see-think-act-4.png">
-	    <img class="fragment" src="images/see-think-act-5.png">
-	    <img class="fragment" src="images/see-think-act-6.png">
-	    <img class="fragment" src="images/see-think-act-7.png">
-	    <img class="fragment" src="images/see-think-act-8.png">
-	    <img class="fragment" src="images/see-think-act-9.png">
-	    <img class="fragment" src="images/see-think-act-10.png">
-	    <img class="fragment" src="images/see-think-act-11.png">
-	    <img class="fragment" src="images/see-think-act.png">
-	    <img class="fragment" src="images/see-think-act-12.png">
-	  </div>
-	</section>
-
+	
 	<section data-background-color="white" data-transition="slide">
 	  
 	  <h4>Simuladores</h4>
@@ -290,8 +399,8 @@
 		<br>
 		<br>
 		<ul>
-		  <li class="fragment" data-fragment-index="1">Baratos</li>
-		  <li class="fragment" data-fragment-index="2">Rápidos</li>
+		  <li class="fragment" data-fragment-index="1">Rápidos</li>
+		  <li class="fragment" data-fragment-index="2">Baratos</li>
 		  <li class="fragment" data-fragment-index="3">Seguros</li>
 		</ul> 
 	      </div>
@@ -299,9 +408,7 @@
 		<img src="images/reinventando.jpg">
 	      </div>
 	    </div>
-	    <img class="fragment current-visible" src="images/airsim.gif">
-	    <img class="fragment current-visible" src="images/campeones_darpa.png">
-	    <img class="fragment current-visible" width="175%" src="images/path_rl.gif">
+	    
 	  </div>
 	</section>
 
@@ -310,69 +417,44 @@
 	  <p>Zhang et al. 2020</p>
 	</section>
 
-	<section>
-	  <img src="images/ciclo_ros.png">
-	  <p>Robot Operating System (ROS)</p>
+	<section data-background-color="white">
+	  <img width="80%" src="images/ciclo_ros.png">
 	</section>
-	
-	<section>
-	  <h4>Estrategias para la exploración coordinada multi-VANT</h4>
-	  <br>
-	  <div class="container">
-	    <p style="color:red;">Retos</p>
-	    <div class="column">
-	      <ul>
-		<li class="fragment" data-fragment-index="1"><p>Representación del mundo</p></li>
-		<li class="fragment" data-fragment-index="2"><p>Trayectorias libres de colisiones</p></li>
-		<li class="fragment" data-fragment-index="3"><p>Repartición de tareas de exploración</p></li>
-		<li class="fragment" data-fragment-index="4"><p>Toma de decisiones inteligente</p></li>
-	      </ul> 
-	    </div>
-	    <br>
-	    
-	    <div class="column image-column">
-	      <div class="vertical-center r-stack">
-		<img class="fragment" data-fragment-index="1" src="images/octomap.png">
-		<img class="fragment" data-fragment-index="2" src="images/uav_sim.gif">
-		<img class="fragment" data-fragment-index="4" src="images/dm.png">
-	      </div>
-	    </div>
-	  </div>
-	  
-	</section>
-	
+
+	<!-- Method overview -->
+	<!-- Imagen de la arquitectura -->
+		
 	<!-- VIDEOS -->
 	<section data-background-color="white" data-transition="slide">
+	  <p>Resultados a la fecha</p>
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-6">
-		<video data-autoplay src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+		<p>1 VANT</p>
+		<video data-autoplay src="videos/output.webm"></video>
 	      </div>
 	      <div class="col-md-6">
-		<video data-autoplay src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+		<p>3 VANTs</p>
+		<video data-autoplay src="videos/output3.webm"></video>
 	      </div>
 	    </div>
 	    <div class="row">
 	      <div class="col-md-6">
-		<video data-autoplay src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+		<p>2 VANTs</p>
+		<video data-autoplay src="videos/output2.webm"></video>
 	      </div>
 	      <div class="col-md-6">
-		<video data-autoplay src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></video>
+		<p>4 VANTs</p>
+		<video data-autoplay src="videos/output4.webm"></video>
 	      </div>
 	    </div>
 	  </div>
+	  <aside class="notes">Estas son unas notas</aside>
 	</section>
 	
 	<section>
 	  <h2>Conclusiones</h2>
-	  <div class="r-stack">
-	    <ul>
-	      <li class="fragment">Crear robots no es solo cosa de fierros, y la programación es fundamental</li> 
-	      <li class="fragment">La construcción de robots debe ...</li>
-	      <li class="fragment">... </li>
-	      <li class="fragment">... </li>
-	    </ul>
-	  </div>
+	  <img width="70%" src="images/maxresdefault.jpg" alt="pils">
 	</section>
 	<section>
 	  <img src="https://img.culturacolectiva.com/content/2016/12/robot.gif" alt="thanks">

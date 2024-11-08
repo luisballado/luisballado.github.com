@@ -1,3 +1,6 @@
+negro despues de terminar por 2 segundos
+ffmpeg -i 4vant.webm -filter_complex "tpad=stop_duration=2" output4.webm
+
 ¿Qué-Por qué-Para qué?
 Estrategias para la exploración coordinada multi-VANT
  1.- Tipos de robots (Robots industrial: confinados en lugares cerrados
