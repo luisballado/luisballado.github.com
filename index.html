@@ -62,6 +62,17 @@
 	     trabajo de tesis -->
 
 	<!-- Nuestra facinacion por crear robots, maquinan que imitan a la naturaleza no es algo reciente, los robots son mas viejos que las computadoras, que los motores y la energia electrica -->
+
+	<section data-background-color="white" data-transition="slide">
+	  <h3>Contenido</h3>
+	  
+	  <ol>
+	    <li><b>Introducción</b></li>
+	    <li>Problemas en robótica</li>
+	    <li>Information Path Planning</li>
+	    <li>Exploración</li>
+	  </ol>
+	</section>
 	
 	<section>
 	  <section>
@@ -136,7 +147,7 @@
 	  </section>
 	  <!-- 1987 Carro autonomo -->
 	  <section data-background-color="white" data-transition="slide">
-	    <p>¿En que año un carro autonomo completo un recorrido de 20km?</p>
+	    <p>¿En que año un carro autónomo completo un recorrido de 20km?</p>
 	    <div class="r-stack">
 	      <img width="150%" class="fragment" src="images/autonomouscar.gif">
 	    </div>
@@ -225,43 +236,24 @@
 	    </div>
 	  </div>
 	</section>
+
+	<section data-background-color="white" data-transition="slide">
+	  <h3>Contenido</h3>
+	  
+	  <ol>
+	    <li>Introducción</li>
+	    <li><b>Problemas en robótica</b></li>
+	    <li>Information Path Planning</li>
+	    <li>Exploración</li>
+	  </ol>
+	</section>
 	
 	<!-- path planning -->
 	<!-- What makes robotics research difficult? -->
 	<!-- Why don't we have reliable autonomy yet? -->
-	<section data-background-color="white" data-transition="slide">
-	  <h4>Robótica</h4>
-	  <p>Planificación de trayectorias</p>
-	  <div class="r-stack">
-	    <div class="container">
-	      <div class="column">
-		<ul>
-		  <li class="fragment">El problema consiste en generar una ruta válida para mover un robot de una configuración inicial a una configuración deseada.</li>
-		</ul> 
-	      </div>
-	      <div class="column image-column">
-		<img src="images/des-rob.png">
-	      </div>
-	    </div>
-	    <img class="fragment" src="images/bostondynamics.gif">
-	  </div>
-	  <br>
-	  <h5 style="font-size:60px;color:red;" class="fragment">El problema es de tipo NP-HARD</h5>
-	</section>
-
-	<!--
-	<section data-background-color="white" data-transition="slide">
-
-	  <h4>Tipos de problemas</h4>
-	  <div class="r-stack">
-	    <img class="fragment current-visible" width="60%" src="images/enepe.webp">
-	    <img class="fragment current-visible" src="images/problemas.png">
-	    <img class="fragment current-visible" src="images/cormen.jpg">
-	  </div>
-	  
-	</section>
-	-->
-	
+	<!-- Planificacion Trayectoria -->
+	<!-- El problema consiste en generar una ruta válida para mover un robot de una configuración inicial a una configuración deseada.-->
+		
 	<!--
 	<section>
 	  <div class="container">
@@ -269,7 +261,7 @@
 	      <h2>Robótica</h2>
 	      <u><p>Planificación de trayectorias</p></u>
 	      <p>El problema consiste en generar una ruta válida para mover un robot de una configuración inicial a una configuración deseada.</p>
-	      <p>Al mismo tiempo, la aplicación de estas técnicas representa un gran desafío para los investigadores en esta área pues las mismas funcionan correctamente en condiciones normales donde se puede disponer de un tiempo “muy grande” para su convergencia, sin embargo, al aplicarlos en robótica nos encontramos con que la respuesta de los robots d ebe ser en tiempo real lo que agrega una restricción mas y hace mucho mas interesante esta área de investigación.</p>
+	      <p>Al mismo tiempo, la aplicación de estas técnicas representa un gran desafío para los investigadores en esta área pues las mismas funcionan correctamente en condiciones normales donde se puede disponer de un tiempo “muy grande” para su convergencia, sin embargo, al aplicarlos en robótica nos encontramos con que la respuesta de los robots debe ser en tiempo real lo que agrega una restricción mas y hace mucho mas interesante esta área de investigación.</p>
 	      <p>Técnicas de planificación de movimientos en robots y sus aplicaciones - El problema de planificación de movimientos consiste en producir una ruta válida para mover un robot de una configuración inicial a una configuración meta. La efectividad de métodos basados en muestreo ha permitido encontrar múltiples aplicaciones para este problema que es intratable computacionalmente. Estas aplicaciones se encuentran en la robótica, realidad virtual, juegos por computadora, diseño de prototipos asistido por computadora y bioinformática. En esta plática se describira el problema, el procedimiento general de los métodos basados en muestreo y algunas aplicaciones. Se incluirán multiples animaciones. Asimismo se comentarán los retos presentes del problema de planificación de movimientos. </p>
 	      
 	    </div>
@@ -283,8 +275,7 @@
 	</section>
 	-->
 
-	<!-- Poner aqui Paradoja de Moravec -->
-	
+		
 	<section class="hide-menu-button">
 	  <section data-transition="slide">
 	    <h3>Problemas en robótica</h3>
@@ -311,43 +302,69 @@
 	    </div>
 	  </section>
 
-	  <!-- Informative Path Planning (IPP) -->
 	  <section data-background-color="white" data-transition="slide">
-	    <h4>Informative Path Planning (IPP)</h4>
-	    Encontrar un camino que maximice la ganancia de información respecto a ciertas limitantes
-	  </section>
-
-	  <section data-background-color="white" data-transition="slide">
-	    <h4>¿Cuáles son las aplicaciones del IPP?</h4>
-	    <p>Inspecciones de estructuras</p>
-	    <p>Reconocimiento de zonas</p>
-	    <p>Monitoreo de incendios</p>
-	    <p>Busqueda y rescate</p>
-	    <p>Reconstrucción 3D</p>
-	    <p>Monitoreo ambiental</p>
-	    <p>Agricultura de presición</p>
-	    <p>... etc</p>
-	    <div class="r-stack"> 
-	      <img class="fragment current-visible" width="50%" src="images/control.png">
-	      <img class="fragment current-visible" src="images/arquitectura_robots.png">
-	      <img class="fragment current-visible" src="images/arquitectura.png">
+	    
+	    <h4>Cálculo de la posición (Localización)</h4>
+	    <p>¿Dónde estoy?</p>
+	    <div class="r-stack">
+	      <div class="container">
+		<div class="column">
+		  <ul>
+		    <li class="fragment" data-fragment-index="1">Global</li>
+		    <ul>
+		      <li class="fragment" data-fragment-index="1">Búsqueda por grafos</li>
+		    </ul> 
+		    <li class="fragment" data-fragment-index="2">Local</li>
+		    <ul>
+		      <li class="fragment" data-fragment-index="2">Campos de potencial artificial</li>
+		      <li class="fragment" data-fragment-index="2">Algoritmos Bug</li>
+		    </ul> 
+		  </ul> 
+		</div>
+		<div class="column image-column">
+		  <img src="images/img5.png">
+		</div>
+	      </div>
+	      <img class="fragment" width="80%" src="images/rrt_star.png">
+	      <img class="fragment" src="images/rrt_car.gif">
+	      <img class="fragment" src="images/bfs_anim.gif">
+	      <img class="fragment" src="images/a_star_anim.gif">
+	      <img class="fragment" src="images/art_pot_anim.gif">
+	    
 	    </div>
 	  </section>
-
-	  <!-- Exploración -->
-	  <!-- 
-	       Classic robot exploration usually:
-	       - Does not have prior knowledge on environments
-	       - Does not consider long-term benefit of exploration
-	       
-	       Lo que queremos lograr:
-	       - Efectuar la exploración de manera descentralizada
-	       - Minimizar la duplicacion de esfuerzos de exploracion
-	    -->
 	  
-	  <!-- Trabajos relacionados -->
-	  <!-- Ventajas - Limitantes -->
-
+	  <section data-background-color="white" data-transition="slide">
+	    
+	    <h4>Representación del entorno</h4>
+	    <p>¿A dónde voy?</p>
+	    <div class="r-stack">
+	      <div class="container">
+		<div class="column">
+		  <ul>
+		    <li class="fragment" data-fragment-index="1">Global</li>
+		    <ul>
+		      <li class="fragment" data-fragment-index="1">Búsqueda por grafos</li>
+		    </ul> 
+		    <li class="fragment" data-fragment-index="2">Local</li>
+		    <ul>
+		      <li class="fragment" data-fragment-index="2">Campos de potencial artificial</li>
+		      <li class="fragment" data-fragment-index="2">Algoritmos Bug</li>
+		    </ul> 
+		  </ul> 
+		</div>
+		<div class="column image-column">
+		  <img src="images/img5.png">
+		</div>
+	      </div>
+	      <img class="fragment" width="80%" src="images/rrt_star.png">
+	      <img class="fragment" src="images/rrt_car.gif">
+	      <img class="fragment" src="images/bfs_anim.gif">
+	      <img class="fragment" src="images/a_star_anim.gif">
+	      <img class="fragment" src="images/art_pot_anim.gif">
+	    
+	    </div>
+	  </section>
 	  
 	  <section data-background-color="white" data-transition="slide">
 	    
@@ -377,10 +394,70 @@
 	      <img class="fragment" src="images/bfs_anim.gif">
 	      <img class="fragment" src="images/a_star_anim.gif">
 	      <img class="fragment" src="images/art_pot_anim.gif">
-	      
+	    
 	    </div>
 	  </section>
+	  
 	</section>
+	
+	<section data-background-color="white" data-transition="slide">
+	  <h3>Contenido</h3>
+	  
+	  <ol>
+	    <li>Introducción</li>
+	    <li>Problemas en robótica</li>
+	    <li><b>Information Path Planning</b></li>
+	    <li>Exploración</li>
+	  </ol>
+	</section>
+	
+	  <!-- Informative Path Planning (IPP) -->
+	<section data-background-color="white" data-transition="slide">
+	  <h4>Informative Path Planning (IPP)</h4>
+	  Encontrar un camino que maximice la ganancia de información respecto a ciertas limitantes
+	</section>
+	
+	<section data-background-color="white" data-transition="slide">
+	  <h4>¿Cuáles son las aplicaciones del IPP?</h4>
+	  <p>Inspecciones de estructuras</p>
+	  <p>Reconocimiento de zonas</p>
+	  <p>Monitoreo de incendios</p>
+	  <p>Búsqueda y rescate</p>
+	  <p>Reconstrucción 3D</p>
+	  <p>Monitoreo ambiental</p>
+	  <p>Agricultura de presición</p>
+	  <p>... etc</p>
+	  <div class="r-stack"> 
+	    <img class="fragment current-visible" width="50%" src="images/control.png">
+	    <img class="fragment current-visible" src="images/arquitectura_robots.png">
+	    <img class="fragment current-visible" src="images/arquitectura.png">
+	  </div>
+	</section>
+
+	<section data-background-color="white" data-transition="slide">
+	  <h3>Contenido</h3>
+	  
+	  <ol>
+	    <li>Introducción</li>
+	    <li>Problemas en robótica</li>
+	    <li>Information Path Planning</li>
+	    <li><b>Exploración</b></li>
+	  </ol>
+	</section>
+	
+	<!-- Exploración -->
+	<!-- 
+	     Classic robot exploration usually:
+	     - Does not have prior knowledge on environments
+	     - Does not consider long-term benefit of exploration
+	     
+	     Lo que queremos lograr:
+	     - Efectuar la exploración de manera descentralizada
+	     - Minimizar la duplicacion de esfuerzos de exploracion
+	  -->
+	
+	<!-- Trabajos relacionados -->
+	<!-- Ventajas - Limitantes -->
 	
 	<section data-background-color="white" data-transition="slide">
 	  
@@ -419,7 +496,7 @@
 		
 	<!-- VIDEOS -->
 	<section data-background-color="white" data-transition="slide">
-	  <p>Resultados a la fecha</p>
+	  <p>Exploración coordinada multi-VANT</p>
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-6">
@@ -444,11 +521,14 @@
 	  </div>
 	  <aside class="notes">Estas son unas notas</aside>
 	</section>
-	
+
+	<!--
 	<section>
 	  <h2>Conclusiones</h2>
 	  <img width="70%" src="images/maxresdefault.jpg" alt="pils">
 	</section>
+	-->
+	
 	<section>
 	  <img src="https://img.culturacolectiva.com/content/2016/12/robot.gif" alt="thanks">
 	  <h2>¡Gracias!</h2>
