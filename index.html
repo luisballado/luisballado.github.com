@@ -310,26 +310,23 @@
 	    
 	    <h4>Localización</h4>
 	    <p>¿Dónde estoy?</p>
+	    <small>Conocer la posición absoluta, por ejemplo mediante GPS, a veces no es suficiente.</small>
 	    <div class="r-stack">
 	      <div class="container">
 		<div class="column">
 		  <ul>
-		    <li class="fragment" data-fragment-index="1">Global</li>
-		    <ul>
-		      <li class="fragment" data-fragment-index="1">Búsqueda por grafos</li>
-		    </ul> 
-		    <li class="fragment" data-fragment-index="2">Local</li>
-		    <ul>
-		      <li class="fragment" data-fragment-index="2">Campos de potencial artificial</li>
-		      <li class="fragment" data-fragment-index="2">Algoritmos Bug</li>
-		    </ul> 
-		  </ul> 
+		    <li class="fragment" data-fragment-index="1">SLAM <small>(Localización y mapeo simultáneos)</small></li>
+		    <li class="fragment" data-fragment-index="2">Odometría</li>
+		    <li class="fragment" data-fragment-index="3">Fusión de sensores</li>
+		  </ul>
+		  <br>
+		  <p class="fragment" data-fragment-index="4">Los errores se acumulan en el tiempo</p>
 		</div>
 		<div class="column image-column">
-		  <img src="images/img5.png">
+		  <img width="100%" src="images/visual.jpg">
 		</div>
 	      </div>
-	      <img class="fragment" src="images/art_pot_anim.gif">
+	      <!--<img class="fragment" src="images/art_pot_anim.gif">-->
 	    
 	    </div>
 	  </section>
@@ -338,31 +335,28 @@
 	    
 	    <h4>Representación del ambiente</h4>
 	    <p>¿A dónde voy?</p>
+	    <small>Representar el ambiente en el cual el robot se mueve e interactúa está relacionado con la representación de la posición del robot.</small>
 	    <div class="r-stack">
 	      <div class="container">
 		<div class="column">
 		  <ul>
-		    <li class="fragment" data-fragment-index="1">Global</li>
-		    <ul>
-		      <li class="fragment" data-fragment-index="1">Búsqueda por grafos</li>
-		    </ul> 
-		    <li class="fragment" data-fragment-index="2">Local</li>
-		    <ul>
-		      <li class="fragment" data-fragment-index="2">Campos de potencial artificial</li>
-		      <li class="fragment" data-fragment-index="2">Algoritmos Bug</li>
-		    </ul> 
+		    <li class="fragment" data-fragment-index="1">Continua</li>
+		    <li class="fragment" data-fragment-index="2">Discreto</li>
+		    <li class="fragment" data-fragment-index="3">Topológico</li>
+		    <!--
+			<li class="fragment" data-fragment-index="1">La precisión del mapa corresponde con la precisión con la cual el robot necesita cumplir sus tareas.</li>
+		    <li class="fragment" data-fragment-index="2">La complejidad de la representación del mapa tiene un impacto directo en la complejidad computacional del razonamiento sobre el mapeado, localización y navegación.</li>
+		    <li class="fragment" data-fragment-index="3">Elegir la representación apropiada requiere entender sus ventajas e inconvenientes.<li>
+		      -->
 		  </ul> 
 		</div>
 		<div class="column image-column">
-		  <img src="images/img5.png">
+		  <img src="images/orb_slam2.jpg">
 		</div>
 	      </div>
-	      <img class="fragment" width="80%" src="images/rrt_star.png">
-	      <img class="fragment" src="images/rrt_car.gif">
-	      <img class="fragment" src="images/bfs_anim.gif">
-	      <img class="fragment" src="images/a_star_anim.gif">
-	      <img class="fragment" src="images/art_pot_anim.gif">
-	    
+	      <img class="fragment" width="40%" src="images/mapa1.png">
+	      <img class="fragment" src="images/mapa2.png">
+	      <img class="fragment" src="images/mapa3.jpg">
 	    </div>
 	  </section>
 	  
@@ -370,6 +364,7 @@
 	    
 	    <h4>Planificación de trayectoria</h4>
 	    <p>¿Cómo llego ahí?</p>
+	    <small>Capacidad de moverse de forma segura a lo largo de una trayectoria entre un punto de inicio y uno final.</small>
 	    <div class="r-stack">
 	      <div class="container">
 		<div class="column">
@@ -410,13 +405,15 @@
 	    <li>Exploración</li>
 	  </ol>
 	</section>
+
 	
 	  <!-- Informative Path Planning (IPP) -->
+	<section>
 	<section data-background-color="white" data-transition="slide">
 	  <h4>Informative Path Planning (IPP) <small>&#9733;</small></h4>
 	  <br>
-	  Encontrar un camino que maximice la ganancia de información respecto a ciertas limitantes.
-	  <p>Insertar equation aqui</p>
+	  <blockquote style="width:100% !important;">Encontrar un camino que maximice la ganancia de información respecto a ciertas limitantes.</blockquote>
+	  <img width="70%" src="images/ipp_eq.png">
 	  <hr>
 	  <footer><small>&#9733; An Informed Sampling-based Algorithm for Informative Path Planning - Moon et al., 2022</small></footer>
 	</section>
@@ -445,7 +442,7 @@
 	    </div>
 	  </div>
 	</section>
-	
+	</section>
 	<section data-background-color="white" data-transition="slide">
 	  <h3>Contenido</h3>
 	  
@@ -456,6 +453,7 @@
 	    <b><li>Exploración</li></b>
 	  </ol>
 	</section>
+	
 	
 	<!-- Exploración -->
 	<!-- 
@@ -498,7 +496,7 @@
 	  <hr>
 	  <footer><small>&#9733; Frontier-based exploration using multiple robots - Yamauchi, Brian 1998</small></footer>
 	</section>
-
+	<section>
 	<section data-background-color="white">
 	  <small>Metodología</small>
 	  <img width="80%" src="images/bigpicture.svg">
@@ -512,6 +510,7 @@
 	  <img width="50%" src="images/cost_function.svg">
 	  <br>
 	  <img width="20%" src="images/cost_matrix.svg">
+	</section>
 	</section>
 	
 	<section data-background-color="white" data-transition="slide">
